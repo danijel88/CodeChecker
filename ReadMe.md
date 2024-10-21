@@ -67,7 +67,7 @@ DRY violation: Method 'MethodA' in class 'Class1' is similar to 'MethodB' in cla
 ```
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [[LICENSE](https://github.com/danijel88/CodeChecker/tree/master?tab=MIT-1-ov-file)](LICENSE) file for details.
 
 ## Contributions
 Contributions, issues, and feature requests are welcome! Feel free to check out the [issues page](https://github.com/danijel88/CodeChecker/issues).
