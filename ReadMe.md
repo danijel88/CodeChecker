@@ -33,15 +33,15 @@ CodeChecker is a C# code analysis tool designed to detect code duplication and D
 
 ### Usage
 
-Run the analyzer by specifying the path to the C# project and similarity thresholds:
+On exist project add .dll write code as example
+```c# 
+string currentDirectory = Directory.GetCurrentDirectory();
 
-```bash
-dotnet run -- <projectPath> <similarityThreshold> <dryThreshold>
-```
+// Navigate up the directory tree
+string sourcePath = Path.GetFullPath(Path.Combine(currentDirectory, @"..\..\..\"));
 
-Example:
-```bash
-dotnet run -- "C:/Projects/MyApp" 2 3
+var codeAnalyzer = new CodeAnalyzer();
+codeAnalyzer.AnalyzeProject(sourcePath, 2,0);
 ```
 
 Where:
