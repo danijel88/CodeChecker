@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageId>CodeCheckerCLI</PackageId>
+	  <Version>1.0.0</Version>
+	  <Authors>Danijel Bokšan</Authors>
+	  <Description>A CLI tool for C# code analysis, detecting duplication and DRY violations.</Description>
+	  <PackageTags>CodeAnalysis;Duplication;DRY;CLI;CodeChecker</PackageTags>
+	  <RepositoryUrl>https://github.com/danijel88/CodecChecker</RepositoryUrl>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CodeChecker\CodeChecker.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{22C7D27D-93F
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCheckerCLI", "CodeCheckerCLI\CodeCheckerCLI.csproj", "{36EAD213-6247-45B2-A641-1F43E41B406E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{C652AE53-3633-4BD4-A944-16A3462E66CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C652AE53-3633-4BD4-A944-16A3462E66CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C652AE53-3633-4BD4-A944-16A3462E66CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EAD213-6247-45B2-A641-1F43E41B406E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EAD213-6247-45B2-A641-1F43E41B406E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EAD213-6247-45B2-A641-1F43E41B406E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EAD213-6247-45B2-A641-1F43E41B406E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +46,7 @@ Global
 		{95A6BC1C-1C5B-4544-9A73-5F4EF5569CBA} = {22C7D27D-93FE-42FE-845C-C84178AD8C64}
 		{23802716-56A2-4D3B-87B1-D1E769FB0FEA} = {22C7D27D-93FE-42FE-845C-C84178AD8C64}
 		{C652AE53-3633-4BD4-A944-16A3462E66CA} = {22C7D27D-93FE-42FE-845C-C84178AD8C64}
+		{36EAD213-6247-45B2-A641-1F43E41B406E} = {22C7D27D-93FE-42FE-845C-C84178AD8C64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D619B65-5CFE-481A-9143-76C0E0924009}
