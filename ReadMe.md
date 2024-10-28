@@ -44,9 +44,13 @@ var codeAnalyzer = new CodeAnalyzer();
 codeAnalyzer.AnalyzeProject(sourcePath, 2,0);
 ```
 Another option is to download from nuget:
-```dotnet add package CodeCheckerCLI --version 1.0.0```
+```
+dotnet add package CodeCheckerCLI --version 1.0.0
+```
+
 and use like:
-```dotnet run -- "C:\\Path With Spaces\\To\\Project" 2 3
+```
+dotnet run -- "C:\\Path With Spaces\\To\\Project" 2 3
 ```
 
 Where:
