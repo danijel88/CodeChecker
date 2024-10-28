@@ -43,11 +43,16 @@ string sourcePath = Path.GetFullPath(Path.Combine(currentDirectory, @"..\..\..\"
 var codeAnalyzer = new CodeAnalyzer();
 codeAnalyzer.AnalyzeProject(sourcePath, 2,0);
 ```
+Another option is to download from nuget:
+```dotnet add package CodeCheckerCLI --version 1.0.0```
+and use like:
+```dotnet run -- "C:\\Path With Spaces\\To\\Project" 2 3
+```
 
 Where:
 - `projectPath` is the path to the C# project directory.
-- `similarityThreshold` is the threshold for identifying similar classes.
-- `dryThreshold` is the threshold for detecting potential DRY violations in methods.
+- `similarityThreshold` is the threshold for identifying similar classes(2).
+- `dryThreshold` is the threshold for detecting potential DRY violations in methods(3).
 
 ### Explanation of Similarity Thresholds
 The `similarityThreshold` allows you to control how strict the comparison should be:
