@@ -1,30 +1,33 @@
 name: Publish NuGet Package
+
 on:
   push:
     tags:
-      -'v*' # This triggers the workflow on version tags
+      - 'v*'  # This triggers the workflow on version tags (e.g., v1.0.0)
+
 jobs:
   publish:
-    runs-on:"ubuntu-latest"
+    runs-on: ubuntu-latest
+
     steps:
-      -name: Checkout code
-      uses: action/checkout@v2
-    -name: Setup .NET
-    uses: actions/setup-dotnet@v1
-    with:
-      dotnet-verision: '8.0.x'
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    -name: Restore dependencies
-    run: dotnet restore
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x'
 
-    -name: Build Project
-    run: dotnet build --configuration Release
+      - name: Restore dependencies
+        run: dotnet restore
 
-    -name: Pack Project
-    run: dotnet pack --configuration Release --output ./nupkgs
+      - name: Build the project
+        run: dotnet build --configuration Release
 
-    -name: Publish to NuGet
-    env: 
-      NUGET_API_KEY: ${{secrets.NUGET_API_KEY}}
-    run: dotnet nuget push ./nupkgs/*nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
-      
+      - name: Pack the project
+        run: dotnet pack --configuration Release --output ./nupkgs
+
+      - name: Publish to NuGet
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: dotnet nuget push ./nupkgs/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
